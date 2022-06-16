@@ -1,0 +1,592 @@
+:root{
+    --main-white-color: #ffffff;
+    --main-black-color: #000000;
+    --main-button-color: #00BAFC;
+    --main-border-raidus: 5px;
+}
+
+/* open-sans-regular - latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/open-sans-v29-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/open-sans-v29-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.+, IE 9+, Safari 5.1+ */
+}
+/* open-sans-700 - latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/open-sans-v29-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/open-sans-v29-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE9+, Safari 5.1+ */
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+    font-weight: 400;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.visually-hidden{
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+
+/* Header section's styles started */
+.site-header{
+    background: var(--main-white-color);
+    box-shadow: 0px 4px 20px #0000001a;
+}
+
+.header-box{
+    display: flex;
+    align-items: center;
+}
+
+.site-header-logo{
+    width: 58px;
+    margin-right: auto;
+    padding: 18px 0;
+    vertical-align: middle;
+    color: #191919;
+}
+
+.site-header-logo:hover{
+    opacity: 0.8;
+}
+
+.site-header-logo:active{
+    opacity: 0.5;
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+}
+
+.nav-list-item-link{
+    padding: 18px;
+    font-size: 15px;
+    line-height: 24px;
+    text-decoration: none;
+    color: var(--main-black-color);
+}
+
+.nav-list-item-link:hover{
+    border-bottom: 3px solid #191919;
+}
+
+.nav-list-item-link:active{
+    background-color: #191919b3;
+    border-bottom: none;
+    color: var(--main-white-color);
+}
+
+/* Main button styles */
+.main-button{
+    padding: 8px 16px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 24px;
+    border: 3px solid transparent;
+    background-color: var(--main-button-color);
+    border-radius: var(--main-border-raidus);
+    color: var(--main-white-color);
+    text-decoration: none;
+}
+
+.main-button:hover{
+    background-color: var(--main-white-color);
+    color: var(--main-button-color);
+    border: 3px solid var(--main-button-color);
+    border-radius: var(--main-border-raidus);
+}
+
+.main-button:active{
+    background: #00bafc99;
+    border: 3px solid transparent;
+    border-radius: var(--main-border-raidus);
+    color: var(--main-white-color);
+}
+/* Main button styles finished*/
+/* Header section's styles finished */
+
+/* Main section's styles started */
+/* Hero section's styles started */
+.hero{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+    padding-bottom: 136px;
+}
+
+.hero-heading{
+    width: 470px;
+    margin-bottom: 16px;
+}
+
+.hero-heading-content{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 130%;
+    color: var(--main-black-color);
+}
+
+.hero-description{
+    width: 465px;
+}
+
+.hero-description-content{
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--main-black-color);
+}
+
+.hero-button{
+    margin-top: 25px;
+}
+
+.hero-button-item{
+    padding: 8px 16px;
+    text-decoration: none;
+    background-color: var(--main-button-color);
+    color: var(--main-white-color);
+    border: 3px solid var(--main-button-color);
+    border-radius: var(--main-border-raidus);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.hero-button-item:hover{
+    opacity: 0.8;
+}
+
+.hero-button-item:active{
+    opacity: 0.6;
+}
+
+.hero-intro-iframe{
+    border: none;
+    border-radius: var(--main-border-raidus);
+}
+/* Hero section's styles finished */
+
+/* Services section's styles started */
+.services-title{
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    text-align: center;
+    color: var(--main-black-color);
+}
+
+.services-description{
+    width: 719px;
+    margin: 0 auto;
+}
+
+.services-description-content{
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--main-black-color);
+}
+
+.services-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.services-list-item{
+    position: relative;
+    width: 320px;
+    box-shadow: 0px 8px 8px #0000001a;
+    border-radius: var(--main-border-raidus);   
+}
+
+.services-list-item:hover{
+    background: var(--main-white-color);
+    box-shadow: 0px 12px 21px #0000001a;
+    border-radius: var(--main-border-raidus);  
+}
+
+.services-list-item:active{
+    background: var(--main-white-color);
+    box-shadow: 0px 4px 4px #00000033;
+    border-radius: var(--main-border-raidus);  
+}
+
+.services-list-item:nth-child(2){
+    margin: 0 70px;
+}
+
+.services-list-item:nth-child(4), .services-list-item:nth-child(5){
+    margin-top: 48px;
+}
+
+.services-list-item:nth-child(4){
+    margin-right: 70px;
+}
+
+.services-list-item::before{
+    position: absolute;
+    content: "";
+    background-image: url("../Images/services-card-first.svg");
+    background-repeat: no-repeat;
+    width: 222px;
+    height: 130px;
+    left: 60px;
+    top: 24px;
+}
+
+.services-list-item:nth-child(2)::before{
+    background-image: url("../Images/services-card-second.svg");
+}
+
+.services-list-item:nth-child(3)::before{
+    background-image: url("../Images/services-card-third.svg");
+}
+
+.services-list-item:nth-child(4)::before{
+    background-image: url("../Images/services-card-fourth.svg");
+}
+
+.services-list-item:nth-child(5)::before{
+    background-image: url("../Images/services-card-fiveth.svg");
+}
+
+.services-list-link{
+    text-decoration: none;
+    color: var(--main-black-color);
+}
+
+.services-list-box{
+    padding-top: 170px;
+    padding-bottom: 24px;
+    text-align: center;
+}
+
+.services-list-heading{
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+}
+
+.services-button{
+    margin-top: 52px;
+    margin-right: 80px;
+    text-align: center;
+}
+
+.services-button-item{
+    margin-left: 16px;
+    line-height: 24px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: var(--main-button-color);
+}
+
+/* Services section's styles finished */
+
+
+/* Strategy section's styles started */
+.strategy{
+    width: 828px;
+    margin: 0 auto;
+    padding-top: 112px;
+}
+
+.strategy-list{
+    display: flex;
+    flex-direction: column;
+    width: 950px;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 122px;
+    list-style: none;
+}
+
+.strategy-list-item{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 229px;
+}
+
+.strategy-list-item:nth-child(5){
+    margin-bottom: 135px;
+}
+
+.strategy-list-item:nth-child(odd)::before{
+    position: absolute;
+    content: "";
+    width: 300px;
+    height: 290px;
+    background-image: url("../Images/ourmethod-one.svg");
+    background-repeat: no-repeat;
+    left: -15px;
+}
+
+.strategy-list-item:nth-child(2)::before{
+    position: absolute;
+    content: "";
+    width: 300px;
+    height: 290px;
+    background-image: url("../Images/ourmethod-two.svg");
+    background-repeat: no-repeat;
+    right: 130px;
+}
+
+.strategy-list-item:nth-child(3)::before{
+    position: absolute;
+    content: "";
+    width: 300px;
+    height: 290px;
+    background-image: url("../Images/ourmethod-three.svg");
+    background-repeat: no-repeat;
+    right: 130px;
+}
+
+.strategy-list-item:nth-child(4)::before{
+    position: absolute;
+    content: "";
+    width: 300px;
+    height: 290px;
+    background-image: url("../Images/ourmethod-four.svg");
+    background-repeat: no-repeat;
+    right: 130px;
+    bottom: -140px;
+}
+
+.strategy-list-item:nth-child(5)::before{
+    position: absolute;
+    content: "";
+    width: 300px;
+    height: 290px;
+    background-image: url("../Images/ourmethod-five.svg");
+    background-repeat: no-repeat;
+    right: 130px;
+    bottom: -120px;
+}
+
+.strategy-list-contents-even{
+    width: 493px;
+    margin-left: 320px;
+}
+
+.strategy-list-contents-odd{
+    width: 593px;
+    margin-right: 400px;
+}
+
+.text-line-height{
+    line-height: 24px;
+}
+
+.strategy-link{
+    text-align: center;
+    margin-top: 0;
+    padding-bottom: 56px;
+}
+/* Strategy section's styles finished */
+
+
+/* Contact section's srtles started */
+.contact{
+    background: var(--main-button-color);
+}
+
+.contact-box{
+    padding-top: 56px;
+    padding-bottom: 64px;
+}
+
+.contact-text{
+    color: var(--main-white-color);
+}
+
+.contact-form{
+    width: 348px;
+    margin-top: 24px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 24px;
+    background-color: var(--main-white-color);
+    border-radius: var(--main-border-raidus);
+}
+
+.contact-form-input{
+    width: 300px;
+    display: block;
+    margin-right: auto;
+    margin-bottom: 16px;
+    margin-left: auto;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 14px;
+    background: #F3F3F3;
+    border-radius: var(--main-border-raidus);
+    border: none;
+}
+
+.contact-form-select{
+    width: 312px;
+}
+
+.form-button{
+    display: flex;
+    width: 173px;
+    margin: 0 auto;
+    padding-bottom: 24px;
+}
+
+.form-button-item{
+    padding: 8px 16px;
+    background: var(--main-button-color);
+    border-radius: var(--main-border-raidus);
+    border: 3px solid transparent;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--main-white-color);
+}
+
+.form-button-item:hover{
+    background-color: var(--main-white-color);
+    color: var(--main-button-color);
+    border: 3px solid var(--main-button-color);
+    border-radius: var(--main-border-raidus);
+}
+
+.form-button-item:active{
+    background: #00bafc99;
+    border: 3px solid transparent;
+    border-radius: var(--main-border-raidus);
+    color: var(--main-white-color);
+}
+/* Contact section's srtles finished */
+/* Main section's styles finisheed */
+
+/* Footer section's styles started */
+.site-footer{
+    background-color: #191919;
+}
+
+.footer-box{
+    display: flex;
+    padding: 56px 0;
+}
+
+.site-footer-info{
+    width: 320px;
+}
+
+.site-footer-social-subheading{
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: var(--main-white-color);
+}
+
+.site-footer-info-description{
+    line-height: 150%;
+    color: var(--main-white-color);
+}
+
+.site-footer-list-item-link{
+    color: var(--main-white-color);
+}
+
+.site-footer-list-item-link:hover{
+    color: var(--main-button-color);
+}
+
+.site-footer-list-item-link:active{
+    opacity: 0.6;
+}
+
+.site-footer-list-box{
+    margin-right: 87px;
+    margin-left: 100px;
+}
+
+.site-footer-list{
+    margin-top: 16px;
+    list-style: none;
+}
+
+.site-footer-list-item{
+    margin-bottom: 8px;
+}
+
+.site-footer-list-item:nth-child(6){
+    margin-bottom: 0px;
+}
+
+.site-footer-list-item-link{
+    text-decoration: none;
+}
+
+.site-footer-social-list-item{
+    position: relative;
+    margin-left: 25px;
+    margin-bottom: 12px;
+}
+
+.site-footer-social-list-item::before{
+    position: absolute;
+    content: "";
+    background: url("../Images/telegram.svg") no-repeat;
+    width: 22px;
+    height: 23px;
+    left: -27px;
+    top: -2px;
+}
+
+.site-footer-social-list-item:nth-child(2)::before{
+    position: absolute;
+    content: "";
+    background: url("../Images/facebook.svg") no-repeat;
+    width: 22px;
+    height: 23px;
+    left: -27px;
+    top: -2px;
+}
+
+.site-footer-social-list-item:nth-child(3)::before{
+    position: absolute;
+    content: "";
+    background: url("../Images/instagram.svg") no-repeat;
+    width: 22px;
+    height: 23px;
+    left: -27px;
+    top: -2px;
+}
+/* Footer section's styles finished */
